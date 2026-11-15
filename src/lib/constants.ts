@@ -1,6 +1,7 @@
 export const BRAND = {
   name: "ARIHANT ELECTRONICS & ELECTRICALS",
   shortName: "ARIHANT",
+  siteUrl: "https://arihant-e67.pages.dev",
   tagline: "Authorized Electronics Sales & Service Center.",
   subheadline: "Buy New Appliances with Official Warranty & Get Fast Doorstep Repair.",
   motto: "Genuine Products. Authorized Service. Trusted for Over 25 Years.",

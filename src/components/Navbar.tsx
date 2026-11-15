@@ -26,7 +26,7 @@ export default function Navbar() {
     { label: "Buy New", href: "#sales" },
     { label: "Authorized Brands", href: "#partners" },
     { label: "Why Arihant", href: "#why-arihant" },
-    { label: "Diagnostic", href: "#diagnostic" },
+    { label: "FAQ", href: "#faq" },
     { label: "Contact", href: "#contact" },
   ];
 

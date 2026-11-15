@@ -7,6 +7,7 @@ import AboutSection from "@/components/AboutSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import ServiceProcess from "@/components/ServiceProcess";
 import DiagnosticAssistant from "@/components/DiagnosticAssistant";
+import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import Footer from "@/components/Footer";
@@ -40,6 +41,9 @@ export default function Home() {
 
       {/* Simple Diagnostic Assistant */}
       <DiagnosticAssistant />
+
+      {/* Frequently Asked Questions (SEO & Customer Trust) */}
+      <FAQSection />
 
       {/* Contact, Location & Instant Request */}
       <ContactSection />
