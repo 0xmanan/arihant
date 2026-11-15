@@ -13,10 +13,11 @@ export default function AppleHero() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
         {/* Main Headline: Apple SF Pro Display typography */}
         <motion.h1
-          initial={{ opacity: 0, y: 28 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-[84px] font-semibold tracking-[-0.035em] leading-[1.04] mb-4 text-[#1d1d1f] dark:text-[#f5f5f7]"
+          className="text-4xl sm:text-6xl md:text-7xl lg:text-[84px] font-semibold tracking-[-0.035em] leading-[1.04] mb-4 text-[#1d1d1f] dark:text-[#f5f5f7] transform-gpu"
+          style={{ willChange: "transform, opacity" }}
         >
           ARIHANT ELECTRONICS <br />
           <span className="font-semibold text-[#86868b]">&amp; ELECTRICALS</span>
@@ -24,30 +25,33 @@ export default function AppleHero() {
 
         {/* Subtitle */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
-          className="text-lg sm:text-2xl font-normal tracking-[-0.015em] text-[#1d1d1f] dark:text-[#f5f5f7] mb-3"
+          transition={{ duration: 0.65, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          className="text-lg sm:text-2xl font-normal tracking-[-0.015em] text-[#1d1d1f] dark:text-[#f5f5f7] mb-3 transform-gpu"
+          style={{ willChange: "transform, opacity" }}
         >
           Authorized Service Partner &amp; Sales Showroom • 25+ Years Experience
         </motion.p>
 
         {/* Description in Apple SF Pro text */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-2xl mx-auto text-sm sm:text-[17px] text-[#86868b] leading-[1.47] mb-8 font-normal"
+          transition={{ duration: 0.65, delay: 0.18, ease: [0.16, 1, 0.3, 1] }}
+          className="max-w-2xl mx-auto text-sm sm:text-[17px] text-[#86868b] leading-[1.47] mb-8 font-normal transform-gpu"
+          style={{ willChange: "transform, opacity" }}
         >
           Your trusted destination for certified doorstep repair across Udaipur, Rajsamand, Banswara, Dungarpur, and Gogunda—and brand-new home appliances at direct showroom prices with official manufacturer warranty.
         </motion.p>
 
         {/* Apple Style CTAs: Primary Blue Pill (Service) + Outline Pill (Sales) */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65, delay: 0.32, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-14"
+          transition={{ duration: 0.65, delay: 0.26, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-14 transform-gpu"
+          style={{ willChange: "transform, opacity" }}
         >
           <Link
             href="#service"
@@ -84,10 +88,11 @@ export default function AppleHero() {
 
         {/* User-Supplied Hero Image (Smooth Zoom/Fade In) */}
         <motion.div
-          initial={{ opacity: 0, y: 36, scale: 0.98 }}
+          initial={{ opacity: 0, y: 32, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.85, delay: 0.42, ease: [0.16, 1, 0.3, 1] }}
-          className="relative max-w-4xl mx-auto rounded-[28px] overflow-hidden border border-[#d2d2d7] dark:border-white/15 bg-black shadow-2xl"
+          transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+          className="relative max-w-4xl mx-auto rounded-[28px] overflow-hidden border border-[#d2d2d7] dark:border-white/15 bg-black shadow-2xl transform-gpu"
+          style={{ willChange: "transform, opacity" }}
         >
           <div className="relative aspect-[16/9] w-full overflow-hidden">
             <Image

@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f5f5f7] dark:bg-black text-[#1d1d1f] dark:text-[#f5f5f7] selection:bg-[#0071e3] selection:text-white transition-colors duration-200">
+    <main className="min-h-screen bg-[#f5f5f7] dark:bg-black text-[#1d1d1f] dark:text-[#f5f5f7] selection:bg-[#0071e3] selection:text-white transition-colors duration-200 overflow-x-clip">
       {/* Navigation with Theme Switcher */}
       <Navbar />
 
