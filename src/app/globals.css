@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --apple-bg: #f5f5f7;
+  --apple-surface: #ffffff;
+  --apple-text-primary: #1d1d1f;
+  --apple-text-secondary: #86868b;
+  --apple-text-muted: #6e6e73;
+  --apple-border: #d2d2d7;
+  --apple-border-subtle: rgba(0, 0, 0, 0.08);
+  --apple-accent: #0071e3;
+  --apple-accent-hover: #0077ed;
+  --apple-pill-bg: #1d1d1f;
+  --apple-pill-text: #ffffff;
+}
+
+html.dark {
+  --apple-bg: #000000;
+  --apple-surface: #161617;
+  --apple-text-primary: #f5f5f7;
+  --apple-text-secondary: #86868b;
+  --apple-text-muted: #a1a1a6;
+  --apple-border: rgba(255, 255, 255, 0.14);
+  --apple-border-subtle: rgba(255, 255, 255, 0.08);
+  --apple-accent: #2997ff;
+  --apple-accent-hover: #47a3ff;
+  --apple-pill-bg: #f5f5f7;
+  --apple-pill-text: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+  background-color: var(--apple-bg);
+  color: var(--apple-text-primary);
+  overflow-x: hidden;
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apple SF Pro Display typography helpers */
+.apple-headline {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.apple-section-title {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.apple-subtitle {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+}
+
+.apple-eyebrow {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.apple-body {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.47059;
+}
+
+/* Minimalist Apple Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(134, 134, 139, 0.4);
+  border-radius: 980px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(134, 134, 139, 0.7);
+}
