@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { BRAND } from "@/lib/constants";
 import { HelpCircle, Check, MessageCircle, Phone, Sparkles } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 interface DiagnosticOption {
   appliance: string;
@@ -148,21 +149,24 @@ export default function DiagnosticAssistant() {
   return (
     <section id="diagnostic" className="py-24 bg-[#f5f5f7] dark:bg-black text-[#1d1d1f] dark:text-[#f5f5f7] border-t border-[#d2d2d7] dark:border-white/10 transition-colors duration-250">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="max-w-3xl mb-12">
-          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#86868b] mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-[#0071e3] dark:text-[#2997ff]" />
-            <span>Self Help &amp; Guidance</span>
+        <ScrollReveal delay={0} y={28}>
+          <div className="max-w-3xl mb-12">
+            <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#86868b] mb-3">
+              <Sparkles className="w-3.5 h-3.5 text-[#0071e3] dark:text-[#2997ff]" />
+              <span>Self Help &amp; Guidance</span>
+            </div>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.03em] text-[#1d1d1f] dark:text-[#f5f5f7] mb-4">
+              Identify the issue in seconds. <br />
+              <span className="font-semibold text-[#86868b]">Simple appliance assistant.</span>
+            </h2>
+            <p className="text-base sm:text-[17px] text-[#86868b] leading-[1.47]">
+              Select what you are noticing to understand the simple cause and request a fast home visit in Udaipur.
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.03em] text-[#1d1d1f] dark:text-[#f5f5f7] mb-4">
-            Identify the issue in seconds. <br />
-            <span className="font-semibold text-[#86868b]">Simple appliance assistant.</span>
-          </h2>
-          <p className="text-base sm:text-[17px] text-[#86868b] leading-[1.47]">
-            Select what you are noticing to understand the simple cause and request a fast home visit in Udaipur.
-          </p>
-        </div>
+        </ScrollReveal>
 
-        <div className="p-8 sm:p-10 rounded-[28px] bg-white dark:bg-[#161617] border border-[#d2d2d7]/80 dark:border-white/10 shadow-sm">
+        <ScrollReveal delay={0.15} y={32}>
+          <div className="p-8 sm:p-10 rounded-[28px] bg-white dark:bg-[#161617] border border-[#d2d2d7]/80 dark:border-white/10 shadow-sm">
           {/* Step 1: Select Appliance */}
           <div className="mb-8">
             <div className="text-xs font-semibold uppercase tracking-wider text-[#86868b] mb-3">
@@ -268,7 +272,8 @@ export default function DiagnosticAssistant() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  );
+      </ScrollReveal>
+    </div>
+  </section>
+);
 }

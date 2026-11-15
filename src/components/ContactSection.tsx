@@ -12,6 +12,7 @@ import {
   ShoppingBag,
   Wrench,
 } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 export default function ContactSection() {
   const [inquiryType, setInquiryType] = useState<"sales" | "service">("service");
@@ -43,22 +44,24 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-24 bg-[#f5f5f7] dark:bg-black text-[#1d1d1f] dark:text-[#f5f5f7] border-t border-[#d2d2d7] dark:border-white/10 transition-colors duration-250">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="max-w-3xl mb-12">
-          <div className="text-xs font-semibold uppercase tracking-[0.14em] text-[#86868b] mb-3">
-            Contact &amp; Showroom Desk
+        <ScrollReveal delay={0} y={28}>
+          <div className="max-w-3xl mb-12">
+            <div className="text-xs font-semibold uppercase tracking-[0.14em] text-[#86868b] mb-3">
+              Contact &amp; Showroom Desk
+            </div>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.03em] text-[#1d1d1f] dark:text-[#f5f5f7] mb-4">
+              Connect with Arihant. <br />
+              <span className="font-semibold text-[#86868b]">We are right here in Udaipur.</span>
+            </h2>
+            <p className="text-base sm:text-[17px] text-[#86868b] leading-[1.47]">
+              Visit our showroom for brand-new appliances or contact our service desk for fast home technician visits.
+            </p>
           </div>
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[-0.03em] text-[#1d1d1f] dark:text-[#f5f5f7] mb-4">
-            Connect with Arihant. <br />
-            <span className="font-semibold text-[#86868b]">We are right here in Udaipur.</span>
-          </h2>
-          <p className="text-base sm:text-[17px] text-[#86868b] leading-[1.47]">
-            Visit our showroom for brand-new appliances or contact our service desk for fast home technician visits.
-          </p>
-        </div>
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           {/* Left Column: Direct Info & Maps */}
-          <div className="lg:col-span-5 space-y-6">
+          <ScrollReveal delay={0.1} y={30} className="lg:col-span-5 space-y-6">
             <div className="p-8 rounded-[28px] bg-white dark:bg-[#161617] border border-[#d2d2d7]/80 dark:border-white/10 shadow-sm">
               <div className="text-xs font-semibold uppercase tracking-wider text-[#86868b] mb-2">
                 Authorized Sales &amp; Service Hub
@@ -198,10 +201,10 @@ export default function ContactSection() {
                 <span className="font-semibold flex-shrink-0 ml-2">Get Directions →</span>
               </a>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* Right Column: Clean Form for Sales & Service */}
-          <div className="lg:col-span-7">
+          <ScrollReveal delay={0.2} y={30} className="lg:col-span-7">
             <div className="p-8 sm:p-10 rounded-[28px] bg-white dark:bg-[#161617] border border-[#d2d2d7]/80 dark:border-white/10 shadow-sm">
               <div className="text-xs font-semibold uppercase tracking-wider text-[#86868b] mb-2">
                 Instant Request
@@ -359,7 +362,7 @@ export default function ContactSection() {
                 </form>
               )}
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
